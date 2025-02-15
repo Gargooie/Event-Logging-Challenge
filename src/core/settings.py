@@ -184,3 +184,8 @@ if SENTRY_SETTINGS.get("dsn") and not DEBUG:
         ],
         default_integrations=False,
     )
+
+#Добавление настроек
+
+OUTBOX_BATCH_SIZE = 1000
+OUTBOX_MAX_ATTEMPTS = 3
